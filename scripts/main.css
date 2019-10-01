@@ -1,0 +1,236 @@
+
+body {
+	font: 9pt verdana;		
+	color : #FFFFFF;														
+	background-image: url(../images/back.gif);	
+	margin-left: 0;															
+	margin-top: 0;															
+	margin-bottom: 0;														
+	margin-right: 0;														
+}
+
+p, li {
+	letter-spacing:normal;
+	line-height:18px;
+	text-align:left;
+}
+
+	select, option, textarea, input 
+{
+	padding: 3px;
+	border: #DDDDDD 1px solid;
+	color: #DDDDDD;
+	font-size: 9px;
+	font-family: verdana; 
+	background-color: #000000;
+}
+
+a {	color: #CCCCCC;
+text-decoration:underline;
+}
+
+a:visited, a:link {
+	color: #CCCCCC;
+	text-decoration: underline;
+	}
+a:active, a:hover {										
+	text-decoration: underline;														
+}
+
+.banner {
+	background-image: url(../images/bannerback.jpg);
+	background-repeat: repeat;
+}
+.footer {
+	background-image: url(../images/footerback.jpg);
+	background-repeat: repeat;
+}
+.menu {
+	background-image: url(../images/menuback.jpg);
+	background-repeat: repeat;
+}
+.menubottom {
+	background-image: url(../images/menuback.jpg);
+	background-repeat: repeat;
+}
+.menu a:visited, .menu a:link {
+	color: #CCCCCC;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	text-decoration: none;
+}
+.menu a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.menumiddle {
+	height: 30px;
+	background-image: url(../images/menu.jpg);
+	background-repeat: no-repeat;
+}
+
+.submenu {
+	background-image: url(../images/submenuback.jpg);
+	background-repeat: repeat;
+}
+.submenubottom {
+	background-image: url(../images/submenubottomback.jpg);
+	background-repeat: repeat;
+}
+.mainnavlink {
+	border-left: #000000 1px solid;
+	border-right: #000000 1px solid;
+}
+.main {
+	background-image: url(../images/back.gif);
+	background-repeat: repeat;
+}
+.content {
+	background-color: #1A2228;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+.leftcontent {
+	background-image: url(../images/leftcontent.jpg);
+	background-repeat: repeat;
+	font: 9pt verdana;	
+	border-right: 1px solid #000000;
+}
+.maintable {
+	background-color: #232D35;
+}
+
+/* Transparency in IE (ignored by Firefox) */
+
+.transparent {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/transparent.png');
+	border: solid #000000 1px;
+}
+
+/* Transparency in Firefox (ignored by IE) */
+
+.transparent[class] {
+	background-image: url(../images/transparent.png);
+	border: solid #000000 1px;
+}
+
+/* Transparency in IE (ignored by Firefox) */
+
+.transparent2 {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/transparent2.png');
+	border: solid #000000 1px;
+}
+
+/* Transparency in Firefox (ignored by IE) */
+
+.transparent2[class] {
+	background-image: url(../images/transparent2.png);
+	border: solid #000000 1px;
+}
+
+/* Transparency in IE (ignored by Firefox) */
+
+.transparent3 {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/transparent3.png');
+	border: solid #000000 1px;
+}
+
+/* Transparency in Firefox (ignored by IE) */
+
+.transparent3[class] {
+	background-image: url(../images/transparent3.png);
+	border: solid #000000 1px;
+}
+
+/* Transparency in IE (ignored by Firefox) */
+
+.transparent4 {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/transparent4.png');
+	border: solid #000000 1px;
+}
+
+/* Transparency in Firefox (ignored by IE) */
+
+.transparent4[class] {
+	background-image: url(../images/transparent4.png);
+	border: solid #000000 1px;
+}
+
+/* Transparency in IE (ignored by Firefox) */
+
+.transparent5 {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/transparent4.png');
+}
+
+/* Transparency in Firefox (ignored by IE) */
+
+.transparent5[class] {
+	background-image: url(../images/transparent4.png);
+}
+
+/* Transparency in IE (ignored by Firefox) */
+
+.transparentx {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/transparentx.png');
+	border: solid #1E3F70 1px;
+}
+
+/* Transparency in Firefox (ignored by IE) */
+
+.transparentx[class] {
+	background-image: url(../images/transparentx.png);
+	border: solid #1E3F70 1px;
+}
+
+.cutenewstop {
+	background-image: url(../images/cutenewstop.gif);
+	background-repeat: no-repeat;
+	height: 22px;
+}
+.cutenewsbottom {
+	background-image: url(../images/cutenewsbottom.gif);
+	background-repeat: no-repeat;
+	height: 17px;
+}
+.awesomeback {
+	background-image: url(../images/contentrightback.jpg);
+	background-repeat: repeat;
+	width: 657px;
+}
+.back2 {
+	background-image: url(../images/contentrightback2.jpg);
+	background-repeat: repeat;
+	width: 657px;
+}
+.back3 {
+	background-image: url(../images/contentrightback3.jpg);
+	background-repeat: repeat;
+	width: 657px;
+}
+.back4 {
+	background-image: url(../images/contentrightback4.jpg);
+	background-repeat: repeat;
+	width: 657px;
+}
+.backsponsor {
+	background-image: url(../images/contentrightbacksponsor.jpg);
+	background-repeat: repeat;
+	width: 657px;
+}
+.right_top {
+	background-image: url(../images/right_topmiddle.gif);
+	background-repeat: repeat;
+}
+.right_bottom {
+	background-image: url(../images/right_bottommiddle.gif);
+	background-repeat: repeat;
+}
+.newstopic {
+	background-image: url(../images/newstopic.gif);
+	background-repeat: no-repeat;
+	width: 310px;
+	height: 22px;
+}
+
+.right {
+	float:right;
+}
