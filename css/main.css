@@ -101,15 +101,15 @@ img{
   height:auto;
 }
 nav {
-  width: 85pc;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.6);
   height: 4pc;
-  margin: auto;
+  margin: auto 12.5%;
  /* z-index: 9999;*/
-  position: relative;
   background-image: repeating-linear-gradient(45deg, transparent 0px,
                     transparent 30px, rgba(25, 25, 25, 0.1) 30px,
                      rgba(25, 25, 25, 0.1) 60px);
+  position: fixed;
 }
 input {
   opacity:0;
@@ -266,10 +266,6 @@ input {
     font-size: 22px;
     line-height: 28px;
   }
-  nav{
-    display:flex;
-    justify-content: center;
-  }
 
   nav ul li{
     display:inline;
@@ -344,16 +340,13 @@ input {
 
   /* Espace entre les liens du site et les icônes de média sociaux */
   span + span {
-    margin-left: 10pc;
-  }
-
-  span {
-    float: left;
+    margin-left: 25%;
   }
 
   .logo {
     width: 40%;
-    padding-bottom: 35%;
+    padding-bottom: 30pc;
+    padding-top: 5pc;
   }
 
   main partenaire {
