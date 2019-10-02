@@ -33,9 +33,9 @@ h6 {
 
 i {
   border: solid rgb(255, 255, 255);
-  border-width: 0 9px 9px 0;
+  border-width: 0 6px 6px 0;
   display: inline-block;
-  padding: 9px;
+  padding: 6px;
 }
 
 #intro a:nth-child(1) {
@@ -44,10 +44,6 @@ float: left;
 
 i+i {
 float: right;
-}
-
-i {
-  margin-bottom: 5pc;
 }
 
 .down {
@@ -87,19 +83,20 @@ section {
   background-color: rgba(0, 0, 0, 0.7);
   width:80%;
   /* max-width: 480px;*/
-  margin: 60px 60px;
+  margin: 15% 15%;
   padding: 15px;
   font-size: 22px;
   line-height: 28px;
-  padding-left: 10%;
-  padding-right: 10%;
+}
+
+section#intro {
+  margin-top: 41pc;
 }
 
  .container {
   font-family: "Kotta One", serif;
   text-align:center;
   padding-top: 1pc;
-
 }
 
 .soustitre {
@@ -156,13 +153,24 @@ input {
 
 @media only screen and (max-width: 767px) {
 
+  .logo {
+    width: 14pc;
+    margin: 0;
+    padding-right: 25%;
+    padding-left: 3pc;
+    float: right;
+  }
+
   nav ul{
 
     max-height:0;
     overflow:hidden;
-    transition : all 3s ease;
-    width:60%;
-    background-color:rgba(0,0,0,1);
+    transition : all 1s ease;
+    width:15pc;
+    background-color: rgba(94, 88, 88, 0.6);
+    background-image: repeating-linear-gradient(45deg, transparent 0px,
+    transparent 30px, rgba(25, 25, 25, 0.1) 30px,
+     rgba(25, 25, 25, 0.1) 60px);
     list-style: none;
   }
 
@@ -288,22 +296,18 @@ input {
     width: 100%;
     height: 100%;
     grid-template-rows: 4.5ec 4.5ec;
-    grid-template-columns: 2ec 2ec 2ec;
-    grid-template-areas: "img1 img1 img1 img1"
-                          "img2 img2 img3 img3"
-                          "img4 img4 img4 img4";
+    grid-template-columns: 15pc 15pc 15pc;
+    grid-template-areas: "img1  img1"
+                          "img2 img3"
+                          "img4 img4";
   }
-  
+
 }
 
 @media only screen and (min-width: 767px) {
 
   .container{
     width:100%;
-  }
-
-  .logo {
-    margin-bottom: 20ec;
   }
 
   body h1 {
@@ -333,7 +337,6 @@ input {
     display:inline;
     margin:0;
     padding:0.5pc;
-    padding-top: 50%;
   }
   .inner {
     position: relative;
@@ -389,13 +392,13 @@ input {
 
   /* Espace entre les liens du site et les icônes de média sociaux */
   span + span {
-    margin-left: 20%;
+    margin-left: 5pc;
   }
 
   .logo {
-    width: 40%;
-    padding-bottom: 20pc;
-    padding-top: 5pc;
+    width: 20%;
+    float: left;
+    padding-right: 3pc;
   }
 
   main partenaire {
@@ -405,7 +408,6 @@ input {
   .grid-conteneur {
     display: grid;
     padding-left: 5pc;
-    width: 100%;
     height: 100%;
     grid-template-rows: 350px 300px;
     grid-template-columns: 4ec 4ec 4ec;
