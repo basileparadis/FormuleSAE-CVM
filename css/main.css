@@ -21,7 +21,6 @@ h1 {
   text-transform: uppercase;
 
   font-weight: 400;
-  margin-top: 20px;
   font-size: 28px;
   line-height: 23px;
 }
@@ -68,6 +67,10 @@ a:hover {
   filter: alpha(opacity=100); /* Pour IE8 */
 }
 
+.button {
+  width: 50%;
+}
+
 /*a faire p */
 p {
   margin: 0 0 15px 0;
@@ -81,12 +84,16 @@ p {
 section {
   color: #e1e1e1;
   background-color: rgba(0, 0, 0, 0.7);
-  width:80%;
   /* max-width: 480px;*/
-  margin: 15% 15%;
-  padding: 15px;
   font-size: 22px;
   line-height: 28px;
+  text-align: justify;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 8pc;
+  width: 80%;
+  padding: 1pc;
 }
 
 section#intro {
@@ -143,6 +150,11 @@ input {
   height:38px;
 }
 
+section iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (min-width: 767px) and (max-width: 1353) {
 
   nav {
@@ -154,11 +166,15 @@ input {
 @media only screen and (max-width: 767px) {
 
   .logo {
-    width: 14pc;
-    margin: 0;
-    padding-right: 25%;
-    padding-left: 3pc;
+    display: block;
+    background: url("../PHOTO/Logo.png");
+    background-size: 15pc;
+    background-repeat: no-repeat;
+    width: 15pc;
+    height: 5pc;
+    font-size: 0;
     float: right;
+    margin-right: 20%;
   }
 
   nav ul{
@@ -166,21 +182,21 @@ input {
     max-height:0;
     overflow:hidden;
     transition : all 1s ease;
-    width:15pc;
     background-color: rgba(94, 88, 88, 0.6);
     background-image: repeating-linear-gradient(45deg, transparent 0px,
-    transparent 30px, rgba(25, 25, 25, 0.1) 30px,
+    transparent 30px, rgba(177, 110, 110, 0.1) 30px,
      rgba(25, 25, 25, 0.1) 60px);
     list-style: none;
+    flex-direction: row;
   }
 
   nav ul li{
     display:block;
     border:none;
     margin:auto;
-    width:400px;
-    text-align: center;
+    text-align: justify;
     font-size:larger;
+    padding-bottom: 0.5pc;
   }
   /* Layout */
 
@@ -228,7 +244,6 @@ input {
   }
 
   .button, p {
-    max-width: 70%;
     margin: 0 auto;
     font-size: 15px;
     line-height: 20px;
@@ -291,15 +306,14 @@ input {
 
   .grid-conteneur {
     display: grid;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: 4.5ec 4.5ec;
-    grid-template-columns: 15pc 15pc 15pc;
-    grid-template-areas: "img1  img1"
-                          "img2 img3"
-                          "img4 img4";
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    grid-template-rows: 18pc 18pc 18pc;
+    grid-template-columns: 20pc 20pc;
+    grid-template-areas: "img1 img1"
+                          "img2 img2"
+                          "img3 img4";
   }
 
 }
@@ -336,7 +350,7 @@ input {
   nav ul li{
     display:inline;
     margin:0;
-    padding:0.5pc;
+    padding:1pc;
   }
   .inner {
     position: relative;
@@ -348,17 +362,10 @@ input {
     display:block;
   }
 
-  /*
-    footer{
-      display:none;
-    }
-  */
-
   #images {
     display: grid;
-    width: 100%;
     height: 100%;
-    grid-template-columns: repeat(3, 5pc);
+    /*grid-template-columns: repeat(3, 20pc);*/
     grid-auto-rows: minmax(5pc, auto);
     grid-template-areas: "img1 img1 img1"
                         "img2 img3 img4"
@@ -371,34 +378,34 @@ input {
     max-height: 100%;
   }
 
-  .images:nth-child(1) {
+  #images:nth-child(1) {
     grid-area: img1;
   }
-  .images:nth-child(2) {
+  #images:nth-child(2) {
     grid-area: img2;
   }
-  .images:nth-child(3) {
+  #images:nth-child(3) {
     grid-area: img3;
   }
-  .images:nth-child(4) {
+  #images:nth-child(4) {
     grid-area: img4;
   }
-  .images:nth-child(5) {
+  #images:nth-child(5) {
     grid-area: img5;
   }
-  .images:nth-child(6) {
+  #images:nth-child(6) {
     grid-area: img6;
   }
 
-  /* Espace entre les liens du site et les icônes de média sociaux */
-  span + span {
-    margin-left: 5pc;
-  }
-
   .logo {
-    width: 20%;
     float: left;
-    padding-right: 3pc;
+    padding-right: 1.5pc;
+    background: url("../PHOTO/Logo.png");
+    background-size: 15pc;
+    background-repeat: no-repeat;
+    width: 15pc;
+    height: 5pc;
+    font-size: 0;
   }
 
   main partenaire {
@@ -409,8 +416,8 @@ input {
     display: grid;
     padding-left: 5pc;
     height: 100%;
-    grid-template-rows: 350px 300px;
-    grid-template-columns: 4ec 4ec 4ec;
+    grid-template-rows: 22pc 22pc;
+    grid-template-columns: 20pc 20pc 20pc;
     grid-template-areas: "img1 img1 img1"
                           "img2  img3 img4";
   }
